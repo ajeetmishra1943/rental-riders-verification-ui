@@ -12,7 +12,7 @@ const AadharForm = () => {
     axios
       .request({
         method: 'POST',
-        url: `${process.env.VITE_VERCEL_API_ENDPOINT}/api/generate-otp`,
+        url: `${process.env.VITE_VERCEL_API_ENDPOINT}api/generate-otp`,
         data: { aadhaar_number: aadharNumber }
       })
       .then(function (response) {
@@ -28,7 +28,7 @@ const AadharForm = () => {
     axios
       .request({
         method: 'POST',
-        url: `${process.env.VITE_VERCEL_API_ENDPOINT}/api/verify-otp`,
+        url: `${process.env.VITE_VERCEL_API_ENDPOINT}api/verify-otp`,
         data: { otp: otp, ref_id: refId }
       })
       .then(function (response) {
