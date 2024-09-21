@@ -3,7 +3,7 @@ import axios from 'axios'
 
 const options = {
   method: 'POST',
-  url: `${process.env.REACT_APP_API_ENDPOINT}/api/verify-dl`
+  url: `${process.env.VITE_VERCEL_API_ENDPOINT}/api/verify-dl`
 }
 
 const DLForm = () => {
