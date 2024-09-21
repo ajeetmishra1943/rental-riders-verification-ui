@@ -9,9 +9,6 @@ const App = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    console.log(process.env)
-    // Check if the entered credentials match any of the valid users
-    console.log(process.env.VITE_VERCEL_ADMIN_USERNAME , username , process.env.VITE_VERCEL_ADMIN_PASSWORD , password)
     const isValidUser = process.env.VITE_VERCEL_ADMIN_USERNAME === username && process.env.VITE_VERCEL_ADMIN_PASSWORD === password;
     if (isValidUser) {
       setIsLoggedIn(true);
